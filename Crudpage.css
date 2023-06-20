@@ -1,0 +1,185 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 6fr;
+  grid-gap: 30px;
+  margin-top: 50px;
+}
+
+body {
+  background-color: rgb(221, 238, 248);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(5, 15, 90);
+}
+
+label {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  margin: auto;
+}
+p {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+input[type="text"] {
+  width: 50%;
+  height: 35px;
+  background-color: darkgrey;
+  border-radius: 5px;
+  border: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.btns {
+  position: relative;
+  text-align: center;
+}
+
+.crt {
+  background-color: rgb(105, 237, 132);
+  width: 10%;
+  font-size: large;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.crt:hover {
+  background-color: rgb(91, 205, 114);
+}
+
+.res {
+  background-color: rgb(105, 134, 237);
+  width: 10%;
+  font-size: large;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.res:hover {
+  background-color: rgb(85, 109, 195);
+}
+
+.upd {
+  background-color: rgb(230, 237, 105);
+  width: 10%;
+  font-size: large;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.upd:hover {
+  background-color: rgb(208, 214, 89);
+}
+
+.del {
+  background-color: rgb(243, 85, 74);
+  width: 10%;
+  font-size: large;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.del:hover {
+  background-color: rgb(213, 75, 65);
+}
+
+.shw {
+  background-color: rgb(243, 74, 198);
+  width: 10%;
+  font-size: large;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.shw:hover {
+  background-color: rgb(198, 67, 163);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 7px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+table.list {
+  width: 90%;
+  background-color: white;
+}
+
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background-color: darkgray;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+tr {
+  background-color: #f1eded;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  height: 40px;
+}
+
+.edi-del {
+  cursor: pointer;
+  color: blue;
+}
+
+.clr-msg {
+  text-align: center;
+  color: green;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper-main {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .wrapper-main {
+    width: 100%;
+  }
+}

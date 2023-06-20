@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shipments CRUD</title>
+    <link rel="stylesheet" href="Crudpage.css" />
+  </head>
+  <body>
+    <div class="wrapper-main">
+      <h1>Shipment Details</h1>
+      <hr />
+      <p class="hide" id="orderNoError">orderNo is required.</p>
+      <div class="container">
+        <label><u>orderNo*</u></label>
+        <input
+          type="text"
+          id="orderNo"
+          placeholder="mo-203568-39924097-9152459"
+        />
+        <label><u>date</u></label>
+        <input type="text" id="date" placeholder="9/22/2019" />
+        <label><u>customer</u></label>
+        <input
+          type="text"
+          id="customer"
+          placeholder="WisdomTree Emerging Markets Consumer Growth Fund"
+        />
+        <label><u>trackingNo</u></label>
+        <input
+          type="text"
+          id="trackingNo"
+          placeholder="TP-604044-93835112-3256076"
+        />
+        <label><u>consignee</u></label>
+        <input
+          type="text"
+          id="consignee"
+          placeholder="Capital City Bank Group"
+        />
+        <label><u>status</u></label>
+        <input type="text" id="status" placeholder="in Transit" />
+      </div>
+      <div class="btns">
+        <input
+          type="button"
+          class="crt"
+          id="btn-create"
+          onclick="onDetailsCreate()"
+          value="Create"
+        />
+        <input
+          type="button"
+          class="res"
+          id="btn-reset"
+          onclick="onReset()"
+          value="Reset"
+        />
+        <input
+          type="button"
+          class="upd"
+          id="btn-update"
+          onclick="onUpdate()"
+          value="Update"
+        />
+        <input
+          type="button"
+          class="del"
+          id="btn-delete"
+          onclick="onDeleteAll()"
+          value="Delete all"
+        />
+        <input
+          type="button"
+          class="shw"
+          id="btn-show"
+          onclick="onShowList()"
+          value="Show list"
+        />
+      </div>
+      <div class="clr-msg" id="upd-del"></div>
+
+      <hr />
+      <div class="container1">
+        <table class="list" id="tablelist">
+          <thead>
+            <tr>
+              <th>ORDERNO</th>
+              <th>DATE</th>
+              <th>CUSTOMER</th>
+              <th>TRACKINGNO</th>
+              <th>STATUS</th>
+              <th>CONSIGNEE</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="Crudpage.js"></script>
+  </body>
+</html>
